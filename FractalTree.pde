@@ -15,5 +15,10 @@ public void draw()
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
-	//your code here    
+	double angle1 = angle + branchAngle;
+	double angle2 = angle - branchAngle;
+	int endX1 = (int)(branchLength*Math.cos(angle1) + x);
+	int endY1 = (int)(branchLength*Math.cos(angle1) + y);
+	branchLength *= fractionLength;
+	line(x,y,)
 } 
